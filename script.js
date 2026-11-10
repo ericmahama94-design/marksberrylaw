@@ -1,7 +1,7 @@
 // ===== SITE DETAILS: edit here and it updates on every page =====
 const SITE = {
   address: '22 Bishopsgate, London, EC2N 4BQ',
-  phone: '+44 20 0000 0000',
+  phone: '+44 75 2950 7591',
   email: 'info@marksberrysolicitors.com',
   hours: 'Monday – Friday: 9:00 AM – 5:30 PM',
   sra: '000000' // your SRA number
