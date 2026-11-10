@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Appointment | Marks Berry Solicitors</title>
+  <meta name="description" content="Contact Marks Berry Solicitors at 22 Bishopsgate, London EC2N 4BQ or book a confidential consultation online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">Get In Touch</p>
+      <h1>Contact Our Office</h1>
+      <p>Tell us about your matter and a member of our team will respond promptly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <h2>Visit or Call Us</h2>
+        <p>We welcome clients by appointment at our City of London office.</p>
+        <ul class="contact-list">
+          <li><strong>Address</strong><br><span data-site="address"></span></li>
+          <li><strong>Phone</strong><br><a data-link="phone" data-site="phone"></a></li>
+          <li><strong>Email</strong><br><a data-link="email" data-site="email"></a></li>
+          <li><strong>Office Hours</strong><br><span data-site="hours"></span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
+          <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"></div>
+          <div class="field">
+            <label for="service">Area of Law</label>
+            <select id="service" name="service">
+              <option>Corporate Law</option>
+              <option>Commercial Contracts</option>
+              <option>Litigation &amp; Disputes</option>
+              <option>Property &amp; Real Estate</option>
+              <option>Employment Law</option>
+              <option>Intellectual Property</option>
+              <option>Family Law</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="date">Preferred Date</label><input type="date" id="date" name="date" required></div>
+          <div class="field">
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time" required>
+              <option value="">Select a time</option>
+              <option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+              <option>12:00 PM</option><option>01:00 PM</option><option>02:00 PM</option>
+              <option>03:00 PM</option><option>04:00 PM</option><option>05:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="message">How can we help?</label><textarea id="message" name="message" rows="5" required></textarea></div>
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-navy full">Book Appointment</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="map reveal">
+        <iframe title="Marks Berry Solicitors location" loading="lazy"
+          src="https://www.google.com/maps?q=22+Bishopsgate,+London+EC2N+4BQ&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
