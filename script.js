@@ -4,7 +4,7 @@ const SITE = {
   phone: '+44 75 2950 7591',
   email: 'info@marksberrysolicitors.com',
   hours: 'Monday – Friday: 9:00 AM – 5:30 PM',
-  sra: '000000' // your SRA number
+  sra: '648922' // your SRA number
 };
 
 const page = location.pathname.split('/').pop() || 'index.html';
